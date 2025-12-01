@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,9 +19,8 @@ public class App {
         }
         logger.warn("This is warn : " + input);
         logger.error("This is error : " + input);
-        logger.fatal("This is fatal : " + input);
+        logger.fatal("This is fatal : {}", input);
 
-        logger.log("","My message");
     }
 }
 
